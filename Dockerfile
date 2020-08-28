@@ -1,13 +1,11 @@
 FROM phusion/passenger-ruby26
 
-ARG ARG_RAILS_MASTER_KEY
-
 ENV PORT=80 \
  NODE_ENV=production \
  RACK_ENV=production \
  RAILS_ENV=production \
  APP_DIR=/home/app/html \
- RAILS_MASTER_KEY=$ARG_RAILS_MASTER_KEY
+ RAILS_MASTER_KEY=b784ac315b5d4bdc7781482d54c67f03
 
 RUN echo "RAILS_MASTER_KEY: ${RAILS_MASTER_KEY}"
 
