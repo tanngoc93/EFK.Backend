@@ -4,12 +4,13 @@
 
 ```html
 RAILS_MAX_THREADS [optional]
-PSQL_HOST [required]
-PSQL_USERNAME [required]
-PSQL_PASSWORD [required]
-PSQL_DEV_DATABASE [required]
-PSQL_TEST_DATABASE [required]
-PSQL_PROD_DATABASE [required]
+DB_PORT [required]
+DB_HOST [required]
+DB_USER [required]
+DB_PASSWORD [required]
+DB_FOR_DEV [required]
+DB_FOR_TEST [required]
+DB_FOR_PROD [required]
 RAILS_ENV [required]
 RACK_ENV [optional]
 ```
