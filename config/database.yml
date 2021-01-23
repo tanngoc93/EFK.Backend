@@ -6,6 +6,7 @@ default: &default
   host: <%= ENV["DB_HOST"] %>
   username: <%= ENV["DB_USER"] %>
   password: <%= ENV["DB_PASSWORD"] %>
+  sslmode:  <%= ENV["DB_SSL_MODE"] %>
 
 development:
   <<: *default
