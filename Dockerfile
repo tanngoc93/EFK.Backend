@@ -41,4 +41,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 EXPOSE $PORT
 
 #
-CMD ["bash", "-c", "bundle exec rails db:create && bundle exec rails db:migrate && passenger start"]
+CMD ["bash", "-c", "bundle exec rails db:create db:migrate && passenger start"]
